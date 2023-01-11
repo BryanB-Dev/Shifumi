@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shifumi</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i|Montserrat:700" rel=stylesheet>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <section>
+            <div class="static-container">
+                <h1 class="title">
+                    <span class="white">shifumi</span><span class="-purple">.()</span>
+                </h1>
+                <div class="content">
+                    <p class="-purple">Projet réalisé en HTML, CSS & JavaScript.</p>
+                    <button class="start-button" onclick="start()">COMMENCER</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="static-container game">
+                <div class="title" style="text-align: center;">
+                    <div class="bot">
+
+                    </div>
+                    <div class="user">
+                        <button class="user-btn pierre" onclick="pierre()">
+                            <i class='bx bx-badge bx-lg'></i>
+                        </button>
+                        <button class="user-btn feuille" onclick="feuille()">
+                            <i class='bx bx-file-blank bx-lg'></i>
+                        </button>
+                        <button class="user-btn ciseaux" onclick="ciseaux()">
+                            <i class='bx bx-cut bx-lg'></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="content result-content" style="text-align: center; margin-top: 20px;">
+                    <div class="result" style="size: 100%;">
+                        
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
